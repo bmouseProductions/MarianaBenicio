@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden !important;
+}
+
+@font-face {
+  font-family: "Aloevera Black";
+  src: url("/fonts/Aloevera/AloeveraDisplay-Bold.otf") format("otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Behind-the-nineties";
+  src: url("/fonts/behind-the-nineties/BehindTheNinetiesBlackItalic.ttf")
+    format("ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+.Aloevera {
+  font-family: "Aloevera Black";
+}
+
+.behind {
+  font-family: "Behind-the-nineties";
+  font-style: italic;
+}
+
+.behind-normal {
+  font-family: "Behind-the-nineties";
+  font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-slide {
+    margin: 0 5px !important;
+  }
+}
+
+.carousel .slick-slide {
+  margin: 0 10px; /* Aumenta a margem entre as imagens no desktop */
+}
+
+@media screen and (max-width: 768px) {
+  .slick-slide {
+    margin: 0 5px !important;
+  }
+}
+
+.slick-carousel .slick-slide {
+  margin: 0 10px; /* Aumenta a margem entre as imagens no desktop */
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slick-dots li {
+  margin: 0px 15px !important;
+  background-color: #ccc; /* Cor padrão (não selecionado) */
+  border-radius: 0.5rem;
+  width: 30px !important;
+  transition: width 0.3s ease, background-color 0.3s ease; /* Transição de tamanho e cor */
+}
+
+.slick-dots li button {
+  width: 50px !important;
+  height: 12px;
+  background-color: #ccc; /* Cor padrão (não selecionado) */
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição de cor e transformação */
+}
+
+.slick-dots li.slick-active button {
+  opacity: 1;
+  background-color: #a64030; /* Cor para o botão ativo */
+  transform: scale(1.2); /* Expande o botão ativo */
+}
+
+.slick-dots li button:before {
+  color: transparent !important;
+}
