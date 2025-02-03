@@ -11,7 +11,8 @@
     <link rel="icon" type="image/x-icon" href="/assets/smile.svg">
     <script src="https://kit.fontawesome.com/3b9ff962e8.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     
@@ -93,9 +94,9 @@
   
   <section class="bg-[#BB7458] ">
     <!-- Seção Principal -->
-    <div class="relative w-full h-auto md:h-96 py-16 md:py-72 flex items-center justify-center">
+    <div class="relative w-full h-auto md:h-96 py-16 md:py-72 flex items-center justify-center pt-32 lg:pt-0">
       <div class="absolute text-center text-white px-4" data-aos="fade-up">
-        <h1 class="font-bold text-4xl sm:text-6xl md:text-8xl mb-7 max-w-4xl mx-auto Aloevera leading-tight">
+        <h1 class="font-bold text-4xl sm:text-6xl md:text-8xl mb-7 max-w-4xl mx-auto Aloevera leading-tight ">
           Por que escolher nossa clínica?
         </h1>
         <!-- <h4 class="max-w-xl mx-auto text-lg sm:text-xl Aloevera">
@@ -240,23 +241,25 @@
 
   
 
-  <section class=" relative bg-[#D3A29D] lg:flex justify-center items-center px-8 py-32">
+  <section class=" relative bg-[#D3A29D] lg:flex justify-center items-center px-8 py-44">
     <img src="assets/smile.svg" class="lg:hidden mx-auto p-12" alt="" >
     <div
   class="absolute bottom-0 left-0 w-full h-[500px] bg-[url('assets/marianaHeader2.png')] bg-no-repeat bg-contain hidden lg:block"
 ></div>
-    <div class="relative lg:flex items-center w-full max-w-7xl">
-      <div class="lg:flex-1  justify-center items-center hidden lg:flex">
-        <div class="relative">
-          <video
-          autoplay
-          loop
-          muted
-          class="rounded-lg lg:w-[580px] lg:h-[780px] lg:pr-48 object-cover"
-        >
-          <source src="https://s3-figma-videos-production-sig.figma.com/video/1343982015119693441/TEAM/b9a8/abda/-2141-4c36-8b38-9efcb9753bdc?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J60suHK5jihblSGA82CiF83s2ao6Wy8Dv5zbuYSTnGYMEQGv7N71FJuL~8tR~T8YsDWdEkAQS5QnQH0ceFo-Pr-~m2qOSGjnL0upxgfBHrrS~oqF~azakBzgsva~0crPQi1O9T-pabXlc9fnf~nEaVuayGOM5vYvHXhn8aOmZ4icylZYT9Gg4MhPW2tpWX9o-GjMX-lk7T-GmuxPxf4zwEYIklVqJggoIU~w4zt7nRfi-U7WoVHz6LV7ULX9-bmVPbCgIMG65dD0REnV20WaiPmcoPYGKmKOiIdyY6aBukrE~Z35RrIsf4b0bCAfg6z~IWcJbiCXqMdFcnpRqulLmg__" type="video/mp4" />
-          Seu navegador não suporta vídeos.
-        </video>
+    <div class="relative lg:flex items-center justify-around w-full max-w-7xl">
+      <div class="lg:flex-1 justify-center items-center hidden lg:flex">
+        <div class="relative w-[580px]">
+          <div class="slick-slider2 rounded-lg">
+            <div>
+              <img src="assets/MarianaBenicio01.webp" class="w-full h-full object-cover rounded-lg" alt="Imagem 1" />
+            </div>
+            <div>
+              <img src="assets/MarianaBenicio02.webp" class="w-full h-full object-cover rounded-lg" alt="Imagem 2" />
+            </div>
+            <div>
+              <img src="assets/MarianaBenicio03.webp" class="w-full h-full object-cover rounded-lg" alt="Imagem 3" />
+            </div>
+          </div>
         </div>
       </div>
       <div class="flex-1 text-white" >
@@ -651,6 +654,20 @@ document.getElementById('instapopup2').classList.add('hidden');
       index = (index + 1) % 2; // Alterne entre os dois slides
       updateCarousel();
   }, 5000);
+</script>
+
+<script>
+  $(document).ready(function(){
+    $('.slick-slider2').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: false,
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 3000
+    });
+  });
 </script>
 
 </body>
