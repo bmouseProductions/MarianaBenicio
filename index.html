@@ -6,13 +6,12 @@
     <title>Mariana Benicio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="/assets/smile.svg">
     <script src="https://kit.fontawesome.com/3b9ff962e8.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">  
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     
@@ -94,7 +93,7 @@
   
   <section class="bg-[#BB7458] ">
     <!-- Seção Principal -->
-    <div class="relative w-full h-auto md:h-96 py-16 md:py-72 flex items-center justify-center pt-32 lg:pt-0">
+    <div class="relative w-full h-auto md:h-96 py-16 md:py-32 flex items-center justify-center">
       <div class="absolute text-center text-white px-4" data-aos="fade-up">
         <h1 class="font-bold text-4xl sm:text-6xl md:text-8xl mb-7 max-w-4xl mx-auto Aloevera leading-tight ">
           Por que escolher nossa clínica?
@@ -289,226 +288,108 @@
     </div>
   </section>
   
-
-  <section class="bg-[#FDE7E7] py-32">
-    <div class="container mx-auto md:px-4">
-      <div class="px-4 lg:px-8 py-8">
-        <!-- Título e Botão -->
-        <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start" >
-          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#A64030] mb-6 lg:mb-8 text-center lg:text-left">
-            Depoimentos
-          </h2>
-          
-          <div class="text-center lg:text-right mb-4">
-            <button class="bg-[#A64030] text-white px-6 py-2 rounded-full hover:bg-[#8A3324]">
-              Saiba Mais
-            </button>
+  <section class="py-16 bg-[#FDE7E7]">
+    <div class="container mx-auto text-center">
+      <h2 class="lg:text-5xl text-2xl mb-8 text-[#BB7458] Aloevera">Alguns depoimentos de nossos clientes</h2>
+      
+      <!-- Carrossel de Depoimentos -->
+      <div class="testimonial-carousel slick-carousel">
+        <!-- Depoimento 1 -->
+        <div class="relative group">
+          <div class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer" onclick="openModal('https://www.youtube.com/embed/x7bKM5uy5Ow')">
+            <img src="https://img.youtube.com/vi/x7bKM5uy5Ow/maxresdefault.jpg" alt="Thumb 1" class="w-full h-96 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300">
+              <span class="text-white text-3xl font-bold">▶</span>
+            </div>
           </div>
-        </div>  
-      
-        <!-- Carrossel de Depoimentos -->
-        <!-- <div class="relative" >
-          <div class="slick-carousel mt-10 pb-10">
-            <div class="bg-[#A64030] text-white p-6 rounded-md shadow-md mb-6">
-              <h3 class="text-lg font-semibold">Sarah Donarua</h3>
-              <p class="text-sm my-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                ligula velit.
-              </p>
-              <div class="flex items-center">
-                <span class="text-yellow-500 text-lg">★★★★★</span>
-              </div>
-            </div>
-      
-            <div class="bg-[#A64030] text-white p-6 rounded-md shadow-md mb-6">
-              <h3 class="text-lg font-semibold">John Doe</h3>
-              <p class="text-sm my-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                fermentum.
-              </p>
-              <div class="flex items-center">
-                <span class="text-yellow-500 text-lg">★★★★★</span>
-              </div>
-            </div>
-      
-            <div class="bg-[#A64030] text-white p-6 rounded-md shadow-md mb-6">
-              <h3 class="text-lg font-semibold">Jane Smith</h3>
-              <p class="text-sm my-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                tincidunt.
-              </p>
-              <div class="flex items-center">
-                <span class="text-yellow-500 text-lg">★★★★★</span>
-              </div>
-            </div>
-      
-            <div class="bg-[#A64030] text-white p-6 rounded-md shadow-md mb-6">
-              <h3 class="text-lg font-semibold">John Doe</h3>
-              <p class="text-sm my-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                fermentum.
-              </p>
-              <div class="flex items-center">
-                <span class="text-yellow-500 text-lg">★★★★★</span>
-              </div>
-            </div>
-      
+          <div class="mt-4">
+            <p class="text-lg text-gray-700">Leticia Pedro</p>
           </div>
-        </div> -->
-        <div class="mx-auto max-w-6xl relative overflow-hidden">
-          <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
-              <!-- Slide 1 -->
-              <div class="flex flex-col md:flex-row items-center md:items-start min-w-full">
-                  <div class="md:w-1/2  space-y-6 md:space-y-8 p-4 md:p-8">
-                      <div>
-                          <h2 class="text-4xl md:text-4xl font-bold leading-tight text-[#A64030]">
-                              <span class=" text-[#A64030] md:text-6xl Aloevera">Transformando</span><br>
-                              vidas através da cirurgia plástica.
-                          </h2>
-                      </div>
-                      <img src="assets/depoimento01.webp" class="md:hidden mx-auto" />
-                      <!-- <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                          “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac molestie dui. Suspendisse potenti. Aliquam a urna quis mauris finibus pellentesque nec sed massa.”
-                      </p> -->
-                      <div>
-                          <p class="font-bold text-lg text-[#A64030]">Roberta Fagundes</p>
-                          <p class="text-sm text-[#A64030]">Paciente</p>
-                      </div>
-                  </div>
-  
-                  <div class="md:w-1/2 md:relative flex justify-center md:justify-end mt-8 md:mt-0">
-                      <img src="assets/depoimento01.webp" alt="Foto do Paciente" class="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto object-cover hidden md:block">
-                      <button class="absolute inset-0 md:left-32 flex items-center justify-center" onclick="instaopenPopup1()">
-                          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-100 transition-all duration-300">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8 text-black">
-                                  <path d="M8 5v14l11-7z"/>
-                              </svg>
-                          </div>
-                      </button>
-                  </div>
-              </div>
-  
-              <!-- Slide 2 (Cópia do Slide 1 com conteúdo atualizado) -->
-              <div class="flex flex-col md:flex-row items-center md:items-start min-w-full">
-                  <div class="md:w-1/2  space-y-6 md:space-y-8 p-4 md:p-8">
-                      <div>
-                          <h2 class="text-4xl text-[#A64030] md:text-4xl font-bold leading-tight">
-                              <span class="italic md:text-6xl text-[#A64030]">Histórias de Sucesso</span><br>
-                              Impactando vidas positivamente.
-                          </h2>
-                      </div>
-                      <div class="md:w-1/2 relative flex justify-center md:justify-end mt-8 md:mt-0">
-                          <img src="assets/depoimento02.webp" class="md:hidden mx-auto" />
-                          <button class="absolute inset-0 md:left-32 flex items-center justify-center" onclick="instaopenPopup2()">
-                              <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-100 transition-all duration-300 md:hidden block">
-                                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8 text-black">
-                                      <path d="M8 5v14l11-7z"/>
-                                  </svg>
-                              </div>
-                          </button>
-                      </div>
-                      <!-- <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                          “Sed nisl lacus, blandit finibus tempus vitae, laoreet eu mi. Nullam mattis eros eget facilisis molestie.”
-                      </p> -->
-                      <div>
-                          <p class="font-bold text-lg text-[#A64030]">Helen Cristina</p>
-                          <p class="text-sm text-[#A64030]">Paciente</p>
-                      </div>
-                  </div>
-  <!--popup da primeria imagem-->
-                  <div class="md:w-1/2 md:relative flex justify-center md:justify-end md:mt-8 md:mt-0">
-                      <img src="assets/depoimento02.webp" alt="Foto do Paciente 2" class="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto object-cover hidden md:block">
-                      <button class="absolute inset-0 md:left-32 flex items-center justify-center hidden md:hidden" onclick="instaopenPopup1()">
-                      <button class="absolute inset-0 md:left-80 flex items-center justify-center hidden md:block" onclick="instaopenPopup2()">
-                          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-100 transition-all duration-300">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8 text-black">
-                                  <path d="M8 5v14l11-7z"/>
-                              </svg>
-                          </div>
-                      </button>
-                  </div>
-              </div>
-          </div>
-  
-          
-          <div id="instapopup1" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
-              <div class="relative bg-white p-4 max-w-sm">
-                  <button 
-                      class="absolute top-4 right-4 text-gray-600 hover:text-black text-2xl z-10" 
-                      onclick="instaclosePopup1()">✖</button>
-                  <div class="aspect-w-16 aspect-h-9">
-  
-                      <iframe 
-                      class="w-[640px] h-[360px] sm:w-[854px] sm:h-[480px] md:w-[1280px] md:h-[520px] max-w-full max-h-full"
-                      src="https://player.vimeo.com/video/1034515296?h=5abd8aa275&badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0" 
-                      frameborder="0" 
-                      allow="autoplay; fullscreen; picture-in-picture" 
-                      allowfullscreen 
-                      title="Vídeo da paciente Roberta">
-                  </iframe>
-                  
-                  </div>
-              </div>
-          </div>
-          
-          
-          
-          
-          
-          
-          
-  
-            <div id="instapopup2" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
-              <div class="relative bg-white p-4 max-w-sm ">
-                <button 
-                  class="absolute top-2 right-2 text-gray-600 hover:text-black" 
-                  onclick="instaclosePopup2()">✖</button>
-                
-                <div class="aspect-w-16 aspect-h-9">
-                  
-                  <iframe 
-                  class="w-[640px] h-[360px] sm:w-[854px] sm:h-[480px] md:w-[1280px] md:h-[520px] max-w-full max-h-full" 
-                  src="https://player.vimeo.com/video/1034534539?h=64747c836e&badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0" 
-                  frameborder="0" 
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-                  title="Depoimento - Helen Cristina">
-              </iframe>
-              
-  
-                </div>
-              </div>
+        </div>
+    
+        <!-- Depoimento 2 -->
+        <div class="relative group">
+          <div class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer" onclick="openModal('https://www.youtube.com/embed/jljGBcEQfnY')">
+            <img src="https://img.youtube.com/vi/jljGBcEQfnY/maxresdefault.jpg" alt="Thumb 2" class="w-full h-96 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300">
+              <span class="text-white text-3xl font-bold">▶</span>
             </div>
-            <button id="prev" class="hidden md:block absolute top-1/2 left-10 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md">←</button>
-        <button id="next" class="hidden md:block absolute top-1/2 right-10 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md">→</button>
-      </div>
-      </div>
-      
-  
-      <div class="mt-32 mx-auto relative" >
-        <img src="assets/sorrisoBg.png" class="w-full h-auto hidden md:block" alt="">
-        <img src="assets/ballPink.png" class="w-full h-auto  md:hidden" alt="">
-        <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
-          <img src="assets/smile.svg" class="pb-12 md:hidden" alt="">
-          <h2 class="text-white lg:text-7xl text-4xl max-w-2xl mx-auto Aloevera">Descubra hoje o potencial do seu <span class="italic behind">sorrisos</span> e realce sua beleza natural!</h2>
-          <a href="#saiba-mais" class="mt-4 px-6 py-3 bg-[#955C38] text-white rounded-full Aloevera">Agende uma avaliação</a>
+          </div>
+          <div class="mt-4">
+            <p class="text-lg text-gray-700">Bernardo Silva</p>
+          </div>
+        </div>
+    
+        <!-- Depoimento 3 -->
+        <div class="relative group">
+          <div class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer" onclick="openModal('https://www.youtube.com/embed/hoH2ReaFCOs')">
+            <img src="https://img.youtube.com/vi/hoH2ReaFCOs/maxresdefault.jpg" alt="Thumb 3" class="w-full h-96 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300">
+              <span class="text-white text-3xl font-bold">▶</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-lg text-gray-700">Tatiane Becker</p>
+          </div>
+        </div>
+    
+        <!-- Depoimento 4 -->
+        <div class="relative group">
+          <div class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer" onclick="openModal('https://www.youtube.com/embed/hoH2ReaFCOs')">
+            <img src="https://img.youtube.com/vi/_z6OIk7dhnw/maxresdefault.jpg" alt="Thumb 4" class="w-full h-96 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity duration-300">
+              <span class="text-white text-3xl font-bold">▶</span>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="text-lg text-gray-700">Alane Cabral</p>
+          </div>
         </div>
       </div>
-      
-      
+    </div>
+  
+    <!-- Modal -->
+    <div id="videoModal" class="fixed inset-0 bg-black bg-opacity-50 flex hidden justify-center items-center z-50">
+      <div class="bg-white p-8 rounded-lg max-w-lg w-full relative">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-2xl">X</button>
+        <iframe id="videoPlayer" class="w-full h-64" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="mt-32 mx-auto relative" >
+      <img src="assets/sorrisoBg.png" class="w-full h-auto hidden md:block" alt="">
+      <img src="assets/ballPink.png" class="w-full h-auto  md:hidden" alt="">
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+        <img src="assets/smile.svg" class="pb-12 md:hidden" alt="">
+        <h2 class="text-white lg:text-7xl text-4xl max-w-2xl mx-auto Aloevera">Descubra hoje o potencial do seu <span class="italic behind">sorrisos</span> e realce sua beleza natural!</h2>
+        <a href="#saiba-mais" class="mt-4 px-6 py-3 bg-[#955C38] text-white rounded-full Aloevera">Agende uma avaliação</a>
+      </div>
     </div>
   </section>
+  
+  
   
   
 
   <footer class="bg-[#955C38] relative">
     <div class="text-center mb-12 lg:mb-0">
       <div class="flex gap-4 text-center justify-center pt-32">
-        <i class="fa-brands fa-square-facebook text-white text-4xl"></i>
+        <a href="https://www.facebook.com/maribenicio.oficial" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-square-facebook text-white text-4xl"></i>
+        </a>
+        <a href="https://www.instagram.com/maribenicio/" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-instagram text-white text-4xl"></i>
+        </a>
         <a href="https://wa.me/5521999994132" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-whatsapp text-white text-4xl"></i>
         </a>
+        <a href="https://www.youtube.com/@dramarianabenicio" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-youtube text-white text-4xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dramarianabenicio/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin text-white text-4xl"></i>
+
+        </a>
       </div>
       <div class="text-center mt-8 text-white">
         <p>Av. Américas, 8585 - Barra da Tijuca - Rio de Janeiro - Vogue Square</p>
@@ -518,13 +399,21 @@
     <img src="assets/footerBg.png" class="relative z-20" alt="">
 
   </footer>
-  
-  
-  
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slick-carousel2').slick({
+        dots: true, // Habilitar os pontos de navegação
+        arrows: true, // Habilitar setas de navegação
+        infinite: true, // Tornar o carrossel infinito
+        speed: 500, // Definir a velocidade da transição
+        slidesToShow: 1, // Exibir um slide por vez
+        slidesToScroll: 1 // Deslizar um por vez
+      });
+    });
+  </script>
 
   <script>
     $(document).ready(function(){
@@ -555,31 +444,6 @@
 <script>
   AOS.init(); // Inicia o AOS
 </script>
-
-<script>
-  $(document).ready(function(){
-      $('.carousel').slick({
-          dots: false,
-          centerMode:true,
-          infinite: true,
-          speed: 500,
-          slidesToShow: 4, 
-          cssEase: 'ease',
-          autoplay: true,
-          autoplaySpeed: 2000,
-          slidesToScroll: 1,
-          responsive: [
-              {
-                  breakpoint: 768, // Para dispositivos menores que 768px
-                  settings: {
-                      slidesToShow: 1, // Exibir 1 imagem no mobile
-                      slidesToScroll: 1,
-                  }
-              }
-          ]
-      });
-  });
-  </script>
 
 <script>
   $(document).ready(function () {
@@ -625,7 +489,7 @@ document.getElementById('instapopup2').classList.add('hidden');
 
 </script>
 
-<script>
+<!-- <script>
   const carousel = document.getElementById('carousel');
   const next = document.getElementById('next');
   const prev = document.getElementById('prev');
@@ -654,7 +518,7 @@ document.getElementById('instapopup2').classList.add('hidden');
       index = (index + 1) % 2; // Alterne entre os dois slides
       updateCarousel();
   }, 5000);
-</script>
+</script> -->
 
 <script>
   $(document).ready(function(){
@@ -666,6 +530,53 @@ document.getElementById('instapopup2').classList.add('hidden');
       dots: false,
       autoplay: true,
       autoplaySpeed: 3000
+    });
+  });
+</script>
+
+<script>
+  // Abrir o modal
+  function openModal(videoSrc) {
+    const modal = document.getElementById('videoModal');
+    const videoPlayer = document.getElementById('videoPlayer');
+    
+    videoPlayer.src = videoSrc;
+    modal.classList.remove('hidden');
+  }
+
+  // Fechar o modal
+  function closeModal() {
+    const modal = document.getElementById('videoModal');
+    const videoPlayer = document.getElementById('videoPlayer');
+    
+    videoPlayer.src = ''; // Parar o vídeo quando fechar o modal
+    modal.classList.add('hidden');
+  }
+
+  // Inicializando o carrossel com Slick
+  $(document).ready(function(){
+    $('.testimonial-carousel').slick({
+      infinite: true,
+      slidesToShow: 2, // 4 slides visíveis no desktop
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: true,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 1024, // Para telas menores que 1024px (tablet)
+          settings: {
+            slidesToShow: 2 // 2 slides visíveis no tablet
+          }
+        },
+        {
+          breakpoint: 768, // Para telas menores que 768px (mobile)
+          settings: {
+            slidesToShow: 1 // 1 slide visível no mobile
+          }
+        }
+      ]
     });
   });
 </script>
